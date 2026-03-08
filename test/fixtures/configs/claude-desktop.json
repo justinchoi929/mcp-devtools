@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "node",
+      "args": ["./fs-server.js"]
+    },
+    "github": {
+      "command": "node",
+      "args": ["./github-server.js"],
+      "env": {
+        "GITHUB_TOKEN": "ghp_xxx"
+      }
+    },
+    "my-server": {
+      "command": "node",
+      "args": ["./my-server.js"]
+    }
+  }
+}
